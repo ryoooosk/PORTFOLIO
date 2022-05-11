@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+/*--------ALL---------*/
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1,h2,p,a {
+  font-family: 'Noto Serif JP', serif;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.6s;
+}
+a:hover {
+  cursor: pointer;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*----------TOP----------*/
+
+.top {
+  height: 92vh;
+}
+
+.top-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-box {
+  position: absolute;
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.title {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+.title-top {
+  font-size: 7.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+.title-middle {
+  font-size: 5rem;
+  line-height: 1;
+}
+.title-bottom {
+  font-size: 7.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+.title-box p {
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  margin-top: 5px;
+}
+
+/*---------TOGGLE----------*/
+
+.nav-toggle {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 60px;
+  right: 100px;
+  width: 80px;
+  height: 90px;
+  z-index: 40;
+  background-color: #E0A919;
+  border-radius: 8px;
+}
+
+.nav-toggle:hover {
+  background-color: #F7CD0F;
+}
+
+.toggle {
+  position: absolute;
+  top: 15px;
+  right: 3%;
+  align-self: center;
+  width: 42px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.toggle i {
+  display: block;
+  position: absolute;
+  width: 42px;
+  height: 2px;
+  top: 30px;
+  right: 15px;
+  align-self: center;
+  background-color: white;
+  transition: transform .5s, opacity .3s;
+}
+
+.toggle i:nth-child(1) {
+  top: 0;
+}
+.toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.toggle i:nth-child(3) {
+  bottom: 0;
+}
+
+.nav-toggle.show i:nth-child(1) {
+  transform: translateY(14.5px) rotate(-45deg);
+}
+.nav-toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.show i:nth-child(3) {
+  transform: translateY(-14.5px) rotate(45deg);
+}
+
+.nav-toggle p {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  letter-spacing: 0.05em;
+}
+
+/*---------toggle-menu---------*/
+
+.toggle-menu {
+  position: absolute;
+  width: 100vw;
+  height: 92vh;
+  top: 0;
+  left: -100vw;
+  transition: transform 1s;
+  z-index: 30;
+}
+.toggle-menu.slide {
+  transform: translateX(100vw);
+}
+
+.toggle-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+}
+.toggle-grid a {
+  overflow: hidden;
+  transition: 0.7s;
+  position: relative;
+  text-align: center;
+  height: 92vh;
+}
+.grid-content img {
+  width: 100%;
+  height: 92vh;
+}
+.grid-content p {
+  font-family: ;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.6rem;
+  letter-spacing: 0.25em;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  transition: 0.8s ease;
+  z-index: 60;
+}
+.grid-content p:hover {
+  background: rgba(0,0,0,0.0);
+}
+
+
+/*----------FOOTER-----------*/
+
+footer {
+  height: 8vh;
+}
+
+.wrapper {
+  padding: 0 4%;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1A1A22;
+}
+
+.footer-left {
+  display: flex;
+  line-height: 8vh;
+}
+
+.name {
+  font-size: 2rem;
+  letter-spacing: 0.4em;
+  color: #E0A919;
+}
+.copy {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-left: 10px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right a {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-left: 30px;
+  letter-spacing: 0.1em;
+}
+
+.btn {
+  width: 120px;
+  padding: 8px 20px;
+  border: 1px solid white;
+  border-radius: 80px;
+  color: white;
+}
+.btn:hover {
+  color: white;
+  background-color: #E0532F;
+  border: 1px solid #E0532F;
+}
+.reserve {
+  color: #E0532F;
+}
+
+.insta {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+.twitter {
+  width: 26px;
+}

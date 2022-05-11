@@ -1,0 +1,282 @@
+
+@media (max-width: 1100px) {
+
+  /*-----------ALL--------------*/
+
+  .container {
+    margin-left: 0;
+    padding-left: 10%;
+    margin-right: 10%;
+  }
+
+  /*-----------HEADER-----------*/
+
+  header {
+    top: 35px;
+    left: 3.9%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .title {
+    height: auto;
+  }
+
+  .ryosuke {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.19em;
+    line-height: 1.7;
+  }
+
+  .ikeido {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.47em;
+    line-height: 1.7;
+  }
+
+  .title p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.11rem;
+    line-height: 1.7;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  /*-----------TOP-------------*/
+
+  .top {
+    padding: 85px 10% 0 10%;
+    margin-left: 0;
+  }
+
+  /*----------ABOUT----------*/
+
+  .about-content {
+    flex-direction: column;
+    padding: 0 10%;
+  }
+
+  .about-text {
+    padding: 30px 0 0 0;
+  }
+
+  .name {
+    justify-content: center;
+  }
+
+  .heading {
+    position: relative;
+    padding-top: 60px;
+    padding-left: 40px;
+  }
+
+  .heading::before {
+    font-size: 8.0rem;
+  }
+
+  /*----------TOP-WORKS-----------*/
+
+  .top-works {
+    padding: 85px 6% 0 6%;
+    margin-left: 0;
+  }
+
+  /*----------WORKS----------*/
+
+  .works-container {
+    margin-left: 0;
+  }
+
+  /*----------PHOTOGRAPY----------*/
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-content {
+    height: 55vh;
+  }
+
+  .grid-content img {
+    height: 55vh;
+  }
+
+  .grid-content h3 {
+    background: rgba(0, 0, 0, 0);
+    opacity: 1;
+    letter-spacing: 0.4em;
+  }
+
+  .grid-content h3:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .photograpy {
+    padding-top: 100px;
+    margin-left: 0;
+  }
+
+  .photograpy-menu {
+    padding-top: 150px;
+  }
+
+  .photograpy-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #photo {
+    width: 75vw;
+    height: 75vh;
+  }
+
+  /*-----------FOOTER-------------*/
+
+  footer {
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  /*------------HEADER------------*/
+
+  .toggle {
+    width: 32px;
+    height: 24px;
+  }
+
+  .toggle.show i:nth-child(1) {
+    transform: translateY(11px) rotate(-45deg);
+    background-color: #333333;
+  }
+  .toggle.show i:nth-child(2) {
+    opacity: 0;
+  }
+  .toggle.show i:nth-child(3) {
+    transform: translateY(-11px) rotate(45deg);
+    background-color: #333333;
+  }
+
+  .toggle-menu {
+    width: 50%;
+  }
+
+  .toggle-menu a {
+    font-size: 1.6rem
+  }
+
+  /*------------ABOUT-------------*/
+
+  .about {
+    margin-bottom: 80px;
+  }
+
+  .heading::before {
+    font-size: 8.0rem;
+  }
+
+  .about-content {
+    padding: 0;
+  }
+
+  .about-text {
+    padding: 15px 3% 0 3%;
+  }
+
+  .about-description p {
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+  }
+
+  /*----------CONTACT-----------*/
+
+  .contact {
+    margin-bottom: 100px;
+  }
+
+  .contact p {
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 60px;
+  }
+
+  /*----------WORKS------------*/
+
+  .works h2 {
+    font-size: 3.2rem;
+    margin-bottom: 80px;
+  }
+
+  .works-content h3 {
+    font-size: 1.9rem;
+    margin-top: 20px;
+  }
+
+  .description {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    margin-top: 15px;
+  }
+
+  /*----------SKILL-----------*/
+
+  .skill h2 {
+    font-size: 3.2rem;
+  }
+
+  .skill-contents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-title {
+    margin-bottom: 2px;
+  }
+
+  .skill-description {
+    font-size: 1.3rem;
+  }
+
+  /*----------PHOTOGRAPY----------*/
+
+  .grid-content {
+    height: 50vh;
+  }
+
+  .grid-content img {
+    height: 50vh;
+  }
+
+  .photograpy-menu {
+    gap: 15px;
+  }
+
+  .photograpy-menu a {
+    font-size: 1.4rem;
+  }
+
+  #photo {
+    width: 90vw;
+    height: 60vh;
+  }
+
+  /*----------FOOTER----------*/
+
+  footer {
+    height: 100px;
+  }
+
+  .footer-contents p {
+    font-size: 1.2rem;
+  }
+
+}
